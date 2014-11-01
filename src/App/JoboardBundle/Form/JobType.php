@@ -22,7 +22,7 @@ class JobType extends AbstractType
                 'expanded' => true
                     ])
             ->add('company')
-            ->add('file','file', ['label' => 'Лого компании', 'required' => false])
+            ->add('file','file', ['label' => 'Логотип компании', 'required' => false])
             ->add('url')
             ->add('position')
             ->add('location')
