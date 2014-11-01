@@ -1,0 +1,19 @@
+AppJoboardBundle_job:
+    resource: "@AppJoboardBundle/Resources/config/routing/job.yml"
+    prefix:   /job
+
+app_joboard_homepage:
+    pattern:  /
+    defaults: { _controller: AppJoboardBundle:Job:index }
+
+AppJoboardBundle_category:
+    pattern:   /category/{slug}/{page}
+    defaults: { _controller: AppJoboardBundle:Category:show, page: 1 }
+login:
+  pattern:   /login
+  defaults:  { _controller: AppJoboardBundle:Default:login }
+login_check:
+  pattern:   /login_check
+
+logout:
+   pattern: /logout  
